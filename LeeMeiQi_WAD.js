@@ -60,3 +60,14 @@ order.forEach(item => {
     console.log(store.addOrder(item.name, item.qty));
 })
 console.log("\nProceeding to make payment...");
+
+console.log("============================================================");
+let subtotal = 0;
+order.forEach(item => {
+    console.log(store.subTotal(item));
+    subtotal += item.price * item.qty;
+});
+
+console.log(store.shippingFee(subtotal));
+shipping = subtotal * 0.05;
+console.log(store.finalTotal(shipping, subtotal));
