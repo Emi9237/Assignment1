@@ -78,3 +78,6 @@ store.methods.forEach((method, index) => {
     console.log((index + 1) + ". " + method);
 });
 console.log(store.paymentMethod("paynow"));
+
+console.log("============================================================");
+console.log("Your order has been placed successfully!");
