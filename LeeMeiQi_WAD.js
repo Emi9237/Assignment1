@@ -42,3 +42,9 @@ module.exports = {
         return "\nYou have used " + payment + " as your payment method.";
     },
 }
+
+const store = module.exports;
+const order = [
+    {name: "Dress", price: 14, qty: 1},
+    {name: "T-shirt", price: 8, qty: 3},
+]
