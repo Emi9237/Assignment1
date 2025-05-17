@@ -37,4 +37,8 @@ module.exports = {
         finalTotal = shipping + subtotal;
         return "\nFinal total: $" + finalTotal.toFixed(2);
     },
+    //Displays the user's payment method
+    paymentMethod(payment) {
+        return "\nYou have used " + payment + " as your payment method.";
+    },
 }
