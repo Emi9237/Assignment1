@@ -32,4 +32,9 @@ module.exports = {
         shipping = subtotal * 5/100
         return "Shipping fee: $" + shipping.toFixed(2);
     },
+    //Calculates the final total by adding sub total and shipping fee together
+    finalTotal(subtotal, shipping) {
+        finalTotal = shipping + subtotal;
+        return "\nFinal total: $" + finalTotal.toFixed(2);
+    },
 }
