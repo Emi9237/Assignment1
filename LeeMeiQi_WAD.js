@@ -54,3 +54,9 @@ console.log("============================================================");
 store.items.forEach((item, index) => {
     console.log((index + 1) + ". " + item);
 });
+
+console.log("============================================================");
+order.forEach(item => {
+    console.log(store.addOrder(item.name, item.qty));
+})
+console.log("\nProceeding to make payment...");
