@@ -19,4 +19,12 @@ module.exports = {
         }
         return "You have " + qty + " " + name + " in your shopping cart.";
     },
+    //Calculates the price of all items
+    subTotal(item) {
+        const total = item.price * item.qty;
+        if (item.qty > 1) {
+            return "Total price of " + item.name + "s: $" + total.toFixed(2);
+        }
+        return "Total price of " + item.name + ": $" + total.toFixed(2);
+    },
 }
