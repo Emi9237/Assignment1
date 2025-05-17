@@ -71,3 +71,10 @@ order.forEach(item => {
 console.log(store.shippingFee(subtotal));
 shipping = subtotal * 0.05;
 console.log(store.finalTotal(shipping, subtotal));
+
+console.log("============================================================");
+console.log("Please choose one of these payment methods:")
+store.methods.forEach((method, index) => {
+    console.log((index + 1) + ". " + method);
+});
+console.log(store.paymentMethod("paynow"));
