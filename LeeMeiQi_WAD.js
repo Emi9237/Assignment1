@@ -12,4 +12,11 @@ module.exports = {
         "Google Pay",
         "Credit Card/Debit Card"
     ],
+    //Displays the customer's order details
+    addOrder(name, qty) {
+        if (qty > 1) {
+            return "You have " + qty + " " + name + "s in your shopping cart.";
+        }
+        return "You have " + qty + " " + name + " in your shopping cart.";
+    },
 }
