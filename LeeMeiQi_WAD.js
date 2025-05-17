@@ -27,4 +27,9 @@ module.exports = {
         }
         return "Total price of " + item.name + ": $" + total.toFixed(2);
     },
+    //Calculates the shipping fee based on the sub total
+    shippingFee(subtotal) {
+        shipping = subtotal * 5/100
+        return "Shipping fee: $" + shipping.toFixed(2);
+    },
 }
