@@ -48,3 +48,9 @@ const order = [
     {name: "Dress", price: 14, qty: 1},
     {name: "T-shirt", price: 8, qty: 3},
 ]
+
+console.log("==================== " + store.description + " ====================");
+console.log("============================================================");
+store.items.forEach((item, index) => {
+    console.log((index + 1) + ". " + item);
+});
