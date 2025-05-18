@@ -11,4 +11,4 @@ For some tips in formatting text in readme file, refer to https://docs.github.co
 # References
 Provide the references that you have used to support your assignment. 
 
-Web application link: https://shopee.sg/
+Web application link: [Shopee Page](https://shopee.sg/)
