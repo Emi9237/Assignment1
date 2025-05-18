@@ -13,7 +13,7 @@ module.exports = {
         "Credit Card/Debit Card"
     ],
     //Displays the customer's order details
-    addOrder(name, qty) {
+    orderDetails(name, qty) {
         if (qty > 1) {
             return "You have " + qty + " " + name + "s in your shopping cart.";
         }
@@ -37,7 +37,7 @@ module.exports = {
         finalTotal = shipping + subtotal;
         return "\nFinal total: $" + finalTotal.toFixed(2);
     },
-    //Displays the user's payment method
+    //Displays the customer's payment method
     paymentMethod(payment) {
         return "\nYou have used " + payment + " as your payment method.";
     },
@@ -59,7 +59,7 @@ store.items.forEach((item, index) => {
 
 console.log("============================================================");
 order.forEach(item => {
-    console.log(store.addOrder(item.name, item.qty));
+    console.log(store.orderDetails(item.name, item.qty));
 })
 console.log("\nProceeding to make payment...");
 
