@@ -49,20 +49,20 @@ const order = [
     {name: "T-shirt", price: 8, qty: 3},
 ]
 
-//Calling the functions
-
 console.log("==================== " + store.description + " ====================");
 console.log("============================================================");
 store.items.forEach((item, index) => {
     console.log((index + 1) + ". " + item);
 });
 
+//Calling the first function
 console.log("============================================================");
 order.forEach(item => {
     console.log(store.orderDetails(item.name, item.qty));
 })
 console.log("\nProceeding to make payment...");
 
+//Calling the second function
 console.log("============================================================");
 let subtotal = 0;
 order.forEach(item => {
@@ -70,10 +70,14 @@ order.forEach(item => {
     subtotal += item.price * item.qty;
 });
 
+//Calling the third function
 console.log(store.shippingFee(subtotal));
 shipping = subtotal * 0.05;
+
+//Calling the fourth function
 console.log(store.finalTotal(shipping, subtotal));
 
+//Calling the five function
 console.log("============================================================");
 console.log("Please choose one of these payment methods:")
 store.methods.forEach((method, index) => {
