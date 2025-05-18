@@ -10,7 +10,59 @@ A node module that displays a list of items and prices in the online store, and 
 - Function #4: Calculates grand total
 - Function #5: Displays selected payment method
 
-In this readme file, describe how to use your node module. It could be similar to **app.js** from Lab2, where you call some functions in your node module and display the output. Describe how to call the functions, what parameters required and so on.
+## Usage
+
+**Users can edit the order array to select different items to be placed in the cart.**
+
+*Sample order data:*
+```
+const order = [
+    {name: "Dress", price: 14, qty: 1},
+    {name: "T-shirt", price: 8, qty: 3},
+]
+```
+
+**Function #1 displays order details based on the item name and quantity parameters.**
+
+*Example of calling function #1:*
+```
+order.forEach(item => {
+    console.log(store.orderDetails(item.name, item.qty));
+})
+```
+
+**Function #2 calculates subtotal of items in the cart based on the item parameter. The subtotal variable stores the subtotal price of items which will be used in function #3.**
+
+*Example of calling function #2:*
+```
+let subtotal = 0;
+order.forEach(item => {
+    console.log(store.subTotal(item));
+    subtotal += item.price * item.qty;
+});
+```
+
+**Function #3 calculates shipping fee based on the subtotal parameter. The shipping variable stores the shipping fee which will be used in function #4.**
+
+*Example of calling function #3:*
+```
+console.log(store.shippingFee(subtotal));
+shipping = subtotal * 0.05;
+```
+
+**Function #4 calculates final total based on the shipping and subtotal parameter.**
+
+*Example of calling function #4:*
+```
+console.log(store.finalTotal(shipping, subtotal));
+```
+
+**Function #5 displays selected payment method based on the payment name parameter.**
+
+*Example of calling function #5:*
+```
+console.log(store.paymentMethod("paynow"));
+```
 
 ## References
 Web application link: [Shopee Home Page](https://shopee.sg/)
