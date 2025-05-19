@@ -10,6 +10,16 @@ A node module that displays a list of items and prices in the online store, and 
 - Function #4: Calculates grand total based on subtotal and shipping fee
 - Function #5: Displays selected payment method
 
+## Set-up
+
+**Install Node JS (LTS ver)**  
+- [Download Node JS application](https://nodejs.org/en/)
+
+To start using the node module, enter the following text in the terminal:
+```
+node LeeMeiQi_Cart.js
+```
+
 ## Usage
 
 **Users can edit the order array to select different items to be placed in the cart.**
