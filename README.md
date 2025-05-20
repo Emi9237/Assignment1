@@ -4,11 +4,11 @@ A node module that displays a list of items and prices in the online store, and 
 
 ## Functions
 
-- Function #1: Displays order details
-- Function #2: Calculates subtotal
-- Function #3: Calculates shipping fee based on subtotal
-- Function #4: Calculates grand total based on subtotal and shipping fee
-- Function #5: Displays selected payment method
+- #1: Displays order details
+- #2: Calculates subtotal
+- #3: Calculates shipping fee based on subtotal
+- #4: Calculates grand total based on subtotal and shipping fee
+- #5: Displays selected payment method
 
 ## Set-up
 
