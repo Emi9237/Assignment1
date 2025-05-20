@@ -22,7 +22,7 @@ const store = require("./LeeMeiQi_cart.js");
 
 To start using the node module, type in the following text in the terminal:
 ```
-node LeeMeiQi_Cart.js
+node app.js
 ```
 
 ## Usage
