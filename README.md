@@ -25,7 +25,7 @@ node LeeMeiQi_Cart.js
 **Users can edit the order array to select different items to be placed in the cart.**
 
 *Sample order data:*
-```
+```js
 const order = [
     {name: "Dress", price: 14, qty: 1},
     {name: "T-shirt", price: 8, qty: 3},
@@ -35,7 +35,7 @@ const order = [
 **Function #1 displays order details based on the item name and quantity parameters.**
 
 *Example of calling function #1:*
-```
+```js
 order.forEach(item => {
     console.log(store.orderDetails(item.name, item.qty));
 })
@@ -44,7 +44,7 @@ order.forEach(item => {
 **Function #2 calculates subtotal of items in the cart based on the item parameter. The subtotal variable stores the subtotal price of items which will be used in function #3.**
 
 *Example of calling function #2:*
-```
+```js
 let subtotal = 0;
 order.forEach(item => {
     console.log(store.subTotal(item));
@@ -55,7 +55,7 @@ order.forEach(item => {
 **Function #3 calculates shipping fee based on the subtotal parameter. The shipping variable stores the shipping fee which will be used in function #4.**
 
 *Example of calling function #3:*
-```
+```js
 console.log(store.shippingFee(subtotal));
 shipping = subtotal * 0.05;
 ```
@@ -63,14 +63,14 @@ shipping = subtotal * 0.05;
 **Function #4 calculates final total based on the shipping and subtotal parameter.**
 
 *Example of calling function #4:*
-```
+```js
 console.log(store.finalTotal(shipping, subtotal));
 ```
 
 **Function #5 displays selected payment method based on the payment name parameter.**
 
 *Example of calling function #5:*
-```
+```js
 console.log(store.paymentMethod("paynow"));
 ```
 
