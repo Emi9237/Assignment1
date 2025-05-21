@@ -39,7 +39,6 @@ const order = [
 
 **Display the welcome message with list of items**
 
-*Sample order data:*
 ```js
 console.log("==================== " + store.description + " ====================");
 console.log("============================================================");
