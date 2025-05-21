@@ -37,6 +37,17 @@ const order = [
 ]
 ```
 
+**Display the welcome message with list of items**
+
+*Sample order data:*
+```js
+console.log("==================== " + store.description + " ====================");
+console.log("============================================================");
+store.items.forEach((item, index) => {
+    console.log((index + 1) + ". " + item);
+});
+```
+
 **Function #1 displays order details based on the item name and quantity parameters.**
 
 *Example of calling function #1:*
